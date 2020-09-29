@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: springdata
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
+    hibernate:
+      ddl-auto: 'create-drop'
+    generate-ddl: true
+    show-sql: true
