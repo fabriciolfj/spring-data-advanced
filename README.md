@@ -3,6 +3,9 @@
 - Colocar findall como fetcher para evitar o problema de n+1
 - Colocar clear no delete
 
+# Alguns conceitos
+- ACID -> transação que fornece atomicidade, consistência, isolamento e durabilidade.
+
 # Uso do @Lock
 - para consultas podemos utilizar no método alguns tipos do alocação da tabela
   - @Lock(LockModeType.PESSIMISTIC_READ) -> aloca a tabela imediatamente, não permite multiplos acessos
