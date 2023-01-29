@@ -22,6 +22,6 @@
   - SERIALIZÁVEL -> evita todos os problemas acima, mas limta o acesso simultâneo ao recurso.
 
 # CAP
-- C (consistencia) -> todos leêm as mesmas informações
-- a (disponibilidade) -> sempre temos respostas da base, mesmo diante a erros.
-- P (particionamento) -> cliente deve continuar funcionando, mesmo em algum cenário de erro.
+- C (consistencia) -> todos leêm as mesmas informações ao mesmo tempo, os dados devem ser replicados a todos os nós
+- a (disponibilidade) -> sempre temos respostas da base, mesmo diante a nós inativos.
+- P (particionamento) -> cliente deve continuar recebendo os dados, mesmo em ocorra falha em algum nó
