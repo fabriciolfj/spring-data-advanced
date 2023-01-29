@@ -20,3 +20,8 @@
   - READ_COMMITTED -> permite apenas dados comitados, no entanto se outra transação confirmar os dados, teremos um resultado diferente.
   - REPEATABLE_READ -> permite apenas dados comitados e não demonstra dados comitados em outra transação por um tempo
   - SERIALIZÁVEL -> evita todos os problemas acima, mas limta o acesso simultâneo ao recurso.
+
+# CAP
+- C (consistencia) -> todos leêm as mesmas informações
+- a (disponibilidade) -> sempre temos respostas da base, mesmo diante a erros.
+- P (particionamento) -> cliente deve continuar funcionando, mesmo em algum cenário de erro.
